@@ -61,7 +61,7 @@ For example, you can find the sixth part mesh for ***node 7*** in 'objs' class f
 The mat file under this folder stores the parameters of the part bounding boxes corresponding to the leaf nodes of a symmetry hierarchy.
 
 ##### D. The labels folder
-The mat file under this folder stores the semantic label for each leaf node. ***Table 3*** gives the node labels of a chair model, *node 7* is the back part of the chair, labeled as 0. *node 6* is the seat, labeled as 1. *node 1*, *node 4* and *node 5* are the leg parts labeled as 2. *node 2* and *node 3* represent the armrests labeled as 3.  
+The mat file under this folder stores the semantic label for each leaf node. ***Table 3*** gives the node labels of a chair model, *node 5* is the back part of the chair, labeled as 0. *node 7* is the seat, labeled as 1. *node 1*, *node 2* and *node 6* are the leg parts labeled as 2. *node 3* and *node 4* represent the armrests labeled as 3.  
 
 |  node  | *node 7*  | *node 3* |  *node 4* | *node 6* | *node 1* | *node 2* | *node 5* |
 | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
