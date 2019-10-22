@@ -26,7 +26,7 @@ Let us use a chair as an example to illustrate how our data is organized. We fir
 ![image](https://github.com/kevin-kaixu/partnet-symh/blob/master/symh.png) 
 ***Figure 1. A chair model is represented with a symmetry hierarchy which is a top-down recursive decomposition into its constituent parts.***
 
-As shown in ***Figure 1***, a chair model is represented with a recursive symmetry hierarchy. Each leaf node represents a part. There are three types of nodes in the hierarchy: **Type 0 -- Leaf nodes** (e.g. *node 7*), **Type 1 -- Adjacency nodes** (e.g. *node 14*, indicating the proximity relations between two adjacent parts), and **Type 2 -- Symmetry nodes** (e.g. *node 9*, which represents either a reflectional or a rotational symmetry relations of multiple parts). A symmetry node stores the parameters (e.g., reflection axis) of the corresponding symmetry. Please refer to [Wang et al. 2011] and [Li et al. 2017] for more detailed definition of symmetry hierarchy.
+As shown in ***Figure 1***, a chair model is represented with a recursive symmetry hierarchy. Each leaf node represents a part. There are three types of nodes in the hierarchy: **Type 0 -- Leaf nodes** (e.g. *node 2*), **Type 1 -- Adjacency nodes** (e.g. *node 16*, indicating the proximity relations between two adjacent parts), and **Type 2 -- Symmetry nodes** (e.g. *node 12*, which represents either a reflectional or a rotational symmetry relations of multiple parts). A symmetry node stores the parameters (e.g., reflection axis) of the corresponding symmetry. Please refer to [Wang et al. 2011] and [Li et al. 2017] for more detailed definition of symmetry hierarchy.
 
 We ensure all shapes belonging to the same shape category share the same high-level structure of symmetry hierarchy. This means that those shapes have consistency in the top few levels of their symmetry hierarchies [van Kaick et al. 2013]. These levels generally correspond to semantically meaningful major parts. For example, a chair model is composed of a back, a seat, a leg and an armrest, and the symmetry hierarchies are consistent at the level of these parts across all chairs.
 
@@ -44,8 +44,14 @@ Each mat file in this folder stores the corresponding types of the nodes of a sy
 ***Table 2. Node type (0 -- leaf node, 1 -- adjacency node, and 2 -- symmetry node) of the nodes in Figure 1 (b).***
 
 
-##### B. The part_fix folder
-The mat file under this folder stores the part bounding box indices corresponding to the leaf nodes of a symmetry hierarchy. 
+##### B. The part mesh indices folder
+The mat file under this folder stores the part mesh indices corresponding to the leaf nodes of a symmetry hierarchy. 
+Taking the symmetry hierarchy in  ***Figure 1 (b)*** for example, ***Table 2*** gives the part mesh indices in the same order of only leaf nodes as above.
+|  leaf node  | *node 7*  | *node 2* |  *node 3* | *node 6* | *node 4* | *node 5* | *node 1* |
+| ---- | ---- | ---- | ---- | ---- | ---- | ---- |---- |
+| part mesh indices | 6 | 5 | 4 | 7 | 16 | 9 | 1 |
+
+For example, you can find the sixth part mesh for ***node 7*** in 'objs' class from result_after_merging.json file for each shape. Note this json file can be found in dataset from [Mo et al 2019].
 
 ##### C. The boxes folder
 The mat file under this folder stores the parameters of the part bounding boxes corresponding to the leaf nodes of a symmetry hierarchy.
@@ -70,7 +76,12 @@ The models folder stores the 3D mesh models in .obj format.
 The obbs folder stores the whole shape obb for each model.
 
 ### Downloading
-The dataset can be downloaded from [here](https://www.dropbox.com/sh/o04yue60joxwkml/AACS0HmBybSgEruM3C5bmAvJa?dl=0).
+The dataset can be downloaded from [here](https://www.dropbox.com/sh/el63rv14d01mk89/AAANX5fxfZ5vV7ygTmj-I_ema?dl=0).
+
+### Read data
+Code for reading symmetry hierarchies and part bounding boxes can be found [here](https://github.com/kevin-kaixu/grass_pytorch).
+
+Code for sampling point cloud from part mesh, reading symmetry hierarchies and part point clouds can be found [here](https://github.com/FoggYu/PartNet).
 
 ### Reference
 **[Wang et al. 2011]** Yanzhen Wang, Kai Xu, Jun Li, Hao Zhang, Ariel Shamir, Ligang Liu, Zhi-Quan Cheng, and Yueshan Xiong, "Symmetry Hierarchy of Man-Made Objects", Computer Graphics Forum (Special Issue of Eurographics 2011), 30(2): 287-296.
