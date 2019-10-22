@@ -37,9 +37,9 @@ There are seven folders for each model.
 ##### A. The ops folder
 Each mat file in this folder stores the corresponding types of the nodes of a symmetry hierarchy. Taking the symmetry hierarchy in  ***Figure 1 (b)*** for example, ***Table 2*** gives the node types in a [depth-first traversing order with vertex postorderings](https://en.wikipedia.org/wiki/Depth-first_search).
 
-|  node  | *node 7*  | *node 2* | *node 12*    |  *node 3*   | *node 13*  | *node 14*  | *node 15* | *node 6* | *node 4* | *node 9* | *node 5* | *node 1* | *node 8* | *node 10* | *node 11* | *node 16* | *node 17* |
-| ---- | ---- | ---- | ---- | ---- | ---- | ---- |---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
-| type | 0 | 0 | 2 | 0 | 2 | 1 | 1 | 0 | 0 | 2 | 0 | 0 | 2 | 1 | 1 | 1 | 1 |
+|  node  | *node 7*  | *node 3* | *node 4*    |  *node 11*   | *node 12*  | *node 13*  | *node 6* | *node 1* | *node 2* | *node 8* | *node 9* | *node 10* | *node 14* | *node 5* | *node 15* |
+| ---- | ---- | ---- | ---- | ---- | ---- | ---- |---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
+| type | 0 | 0 | 0 | 1 | 2 | 1 | 0 | 0 | 0 | 1 | 2 | 1 | 1 | 0 | 1 |
 
 ***Table 2. Node type (0 -- leaf node, 1 -- adjacency node, and 2 -- symmetry node) of the nodes in Figure 1 (b).***
 
@@ -48,7 +48,7 @@ Each mat file in this folder stores the corresponding types of the nodes of a sy
 The mat file under this folder stores the part mesh indices corresponding to the leaf nodes of a symmetry hierarchy.
 Taking the symmetry hierarchy in  ***Figure 1 (b)*** for example, ***Table 2*** gives the part mesh indices of leaf nodes in the same order as above.
 
-|  leaf node  | *node 7*  | *node 2* |  *node 3* | *node 6* | *node 4* | *node 5* | *node 1* |
+|  leaf node  | *node 7*  | *node 3* |  *node 4* | *node 6* | *node 1* | *node 2* | *node 5* |
 | ---- | ---- | ---- | ---- | ---- | ---- | ---- |---- |
 | part mesh indices | 6 | 5 | 4 | 7 | 16 | 9 | 1 |
 
@@ -63,9 +63,9 @@ The mat file under this folder stores the parameters of the part bounding boxes 
 ##### D. The labels folder
 The mat file under this folder stores the semantic label for each leaf node. ***Table 3*** gives the node labels of a chair model, *node 7* is the back part of the chair, labeled as 0. *node 6* is the seat, labeled as 1. *node 1*, *node 4* and *node 5* are the leg parts labeled as 2. *node 2* and *node 3* represent the armrests labeled as 3.  
 
-|  node  |  *node 7*   | *node 2* | *node 3*    | *node 6*    |  *node 4*    | *node 5*   | *node 1*    |
+|  node  | *node 7*  | *node 3* |  *node 4* | *node 6* | *node 1* | *node 2* | *node 5* |
 | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
-| label | 0 | 3 | 3 | 1 | 2 | 2 | 2 |
+| label | 1 | 3 | 3 | 2 | 2 | 2 | 0 |
 
 ***Table 3. Node labels (0 -- back, 1 -- seat, 2 -- leg, and 3 -- armrest).***
 
