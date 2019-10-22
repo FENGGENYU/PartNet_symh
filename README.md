@@ -6,7 +6,7 @@ The **PartNet-Symh dataset** augments the **PartNet dataset** by adding a recurs
 
 ### Basic Information
 
-The dataset contains *22699* 3D shapes covering *24* shape categories. See ***Table 1*** for the statistics of the dataset.
+The dataset contains *22369* 3D shapes covering *24* shape categories. See ***Table 1*** for the statistics of the dataset.
 
 |  category  |  Bag   |  Bed   |  Bottle   |  Bowl   |  Chair   |  Clock   |  Display   |  Door   |  Faucet   |  Hat   |  Keyboard   |  Knife   |  Lamp   |  Laptop   |  Microwave   |  Mug   |  Refrigerator   |  Scissors   |  Storage   |  Table   |  TrashCan   |  Vase   |  Dishwasher   |  Earphone   |
 | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- | ---- |
