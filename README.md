@@ -47,6 +47,7 @@ Each mat file in this folder stores the corresponding types of the nodes of a sy
 ##### B. The part mesh indices folder
 The mat file under this folder stores the part mesh indices corresponding to the leaf nodes of a symmetry hierarchy. 
 Taking the symmetry hierarchy in  ***Figure 1 (b)*** for example, ***Table 2*** gives the part mesh indices in the same order of only leaf nodes as above.
+
 |  leaf node  | *node 7*  | *node 2* |  *node 3* | *node 6* | *node 4* | *node 5* | *node 1* |
 | ---- | ---- | ---- | ---- | ---- | ---- | ---- |---- |
 | part mesh indices | 6 | 5 | 4 | 7 | 16 | 9 | 1 |
