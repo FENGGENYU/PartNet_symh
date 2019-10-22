@@ -54,6 +54,7 @@ Taking the symmetry hierarchy in  ***Figure 1 (b)*** for example, ***Table 2*** 
 
 ***Table 3. part mesh indices for leaf nodes.***
 
+
 For example, you can find the sixth part mesh for ***node 7*** in 'objs' class from result_after_merging.json file for this shape. Note that this json file can be found in dataset from [[Mo et al 2019]](https://cs.stanford.edu/~kaichun/partnet/).
 
 ##### C. The boxes folder
