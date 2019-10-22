@@ -52,7 +52,9 @@ Taking the symmetry hierarchy in  ***Figure 1 (b)*** for example, ***Table 2*** 
 | ---- | ---- | ---- | ---- | ---- | ---- | ---- |---- |
 | part mesh indices | 6 | 5 | 4 | 7 | 16 | 9 | 1 |
 
-For example, you can find the sixth part mesh for ***node 7*** in 'objs' class from result_after_merging.json file for each shape. Note this json file can be found in dataset from [Mo et al 2019].
+***Table 3. part mesh indices for leaf nodes.***
+
+For example, you can find the sixth part mesh for ***node 7*** in 'objs' class from result_after_merging.json file for this shape. Note that this json file can be found in dataset from [[Mo et al 2019]](https://cs.stanford.edu/~kaichun/partnet/).
 
 ##### C. The boxes folder
 The mat file under this folder stores the parameters of the part bounding boxes corresponding to the leaf nodes of a symmetry hierarchy.
@@ -74,7 +76,7 @@ The mat file in the syms folder stores the symmetry parameters for each symmetry
 The models folder stores the 3D mesh models in .obj format.
 
 ##### G. The obbs folder
-The obbs folder stores the whole shape obb for each model.
+The obbs folder stores the whole shape obb for each model, which contains original part obb, adjacent part relations and symmetric parameters.
 
 ### Downloading
 The dataset can be downloaded from [here](https://www.dropbox.com/sh/el63rv14d01mk89/AAANX5fxfZ5vV7ygTmj-I_ema?dl=0).
