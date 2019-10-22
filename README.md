@@ -83,7 +83,7 @@ The obbs folder stores the whole shape obb for each model, which contains origin
 The dataset can be downloaded from [here](https://www.dropbox.com/sh/el63rv14d01mk89/AAANX5fxfZ5vV7ygTmj-I_ema?dl=0).
 
 ### Read data
-Code for reading symmetry hierarchies and part bounding boxes can be found [here](https://github.com/kevin-kaixu/grass_pytorch).
+Code for reading symmetry hierarchies and part bounding boxes can be found [here](https://github.com/PeppaZhu/grass).
 
 Code for sampling point cloud from part mesh, reading symmetry hierarchies and part point clouds can be found [here](https://github.com/FoggYu/PartNet).
 
